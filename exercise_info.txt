@@ -1,0 +1,74 @@
+Exercise – Inheritance and Polymorphism 
+
+Objective:
+
+The objective of this exercise is to look at object hierarchies and implement some classes which 
+extend from one another and use method specifications (abstract methods) to define behaviors.
+
+Overview:
+
+This exercise is going to look at three classes, Shape, Rectangle and Circle. There is also a ‘helper’ 
+class called Point which stores an x and y coordinate pair allowing us to return the current 
+coordinates of the shape.
+
+Inheritance:
+
+1. Create the Point class
+
+a. This has two fields, x and y
+
+
+2. Create a Shape class
+
+a. A shape has four fields, a String name, a String colour and two doubles for the 
+position called x and y
+
+b. Make the class abstract and add two abstract methods: 
+
+i. getArea() that returns a float
+
+ii. getCenterPoint() that returns a float
+Now we want to write the concrete implementations of the class
+
+
+3. Create a class called Rectangle 
+Rectangles are a type of shape that also store the height and width of the rectangle. They 
+have a method “isSquare” which returns a Boolean value stating if the rectangle is a square 
+(if the height and the width are the same).
+
+a. Rectangles are a sub-class of Shape, so we need to extend the Shape class at the 
+class declaration
+
+b. As well as the standard shape classes we want our rectangle to store a height and a 
+width field, declare these variables in the class.
+
+c. Now write the __init__ for the Rectangle, it should take in all the parameters 
+required to setup the Shape object and also the parameters required for the 
+rectangle.
+
+d. Implement the method isSquare(), this should return a Boolean value based on 
+whether the height and the width are the same value
+
+e. Finally, we need to override the abstract methods in the shape class. Implement the 
+getArea() method and the getCenterPoint() method for the rectangle class
+
+f. Test your method by creating few rectangle objects and print out the contents of the 
+objects
+
+
+4. Next we want to create a Circle class
+
+A circle is a shape that also stores the radius of the shape.
+
+a. Create the circle class, remember to extend Shape
+
+b. Implement the new fields, and abstract methods for the class
+
+i. The circle class does not have a isSquare() method as it would make no 
+sense!
+
+ii. The area of a circle is (πr2) the value of PI is available for use from the Math 
+package, see if you can find it in the library and use that rather than writing 
+the number
+
+c. Test the class by creating a few circle objects and printing out their contents
